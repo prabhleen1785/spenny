@@ -1,13 +1,283 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9f9;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.titleBarWrapper {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleBar {
+  width: 93px;
+  height: 28px;
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.39px;
+  color: #042c5c;
+}
+
+.titleIcon {
+  width: 17px;
+  height: 11px;
+  background-color: #0eafe6;
+}
+
+.cardBalanceWrapper {
+  display: flex;
+  padding: 24px;
+  padding-top: 0px;
+}
+
+.cardBalanceOuter {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.cardBalanceTitle {
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #77869e;
+}
+.cardBalanceMoney {
+  width: 103px;
+  height: 41px;
+  font-family: Avenir;
+  font-size: 30px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.85px;
+  color: #042c5c;
+}
+.cardBalanceIconWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.upperArrow {
+  width: 10px;
+  height: 10px;
+}
+.cardBalanceUpper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.cardBalanceIconUpper {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background-color: #e2f2eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardBalanceMoneyUpper {
+  width: 41px;
+  height: 16px;
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #1bc773;
+  margin-left: 12px;
+}
+.cardBalanceLower {
+  display: flex;
+  align-items: center;
+}
+.cardBalanceIconLower {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background-color: #f6e6e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+}
+.cardBalanceMoneyLower {
+  width: 41px;
+  height: 16px;
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #f24750;
+  margin-left: 12px;
+}
+
+.spendingTitle {
+  padding: 24px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spendingTitleActive {
+  padding-top: 0px;
+}
+
+.spendingTitleBreakdown {
+  width: 210px;
+  height: 27px;
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.39px;
+  color: #042c5c;
+  margin-bottom: 16px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.spendingItemsWrapper {
+  width: 100%;
+}
+
+.shoppingItem {
+  width: calc(100% - 20px);
+  height: 56px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+  padding: 0 10px;
+}
+
+.shoppingIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ff7e87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoppingIconDesign {
+  width: 20px;
+  height: 20px;
+}
+
+.shoppingInfo {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.shoppingTitle {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: #042c5c;
+}
+.shoppingDate {
+  font-family: Avenir-Roman;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.27px;
+  color: #77869e;
+}
+
+.shoppingAmount {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: #ee5a55;
+}
+
+.color1 {
+  background-color: #ff7e87;
+}
+
+.color2 {
+  background-color: #00d793;
+}
+
+.color3 {
+  background-color: #4c87f3;
+}
+
+.monthWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.monthName {
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.11px;
+  color: #77869e;
+  align-self: center;
+}
+
+.monthTitle {
+  width: 101px;
+  height: 32px;
+  border-radius: 18.5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.11px;
+  color: #77869e;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
